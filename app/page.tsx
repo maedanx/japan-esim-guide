@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
 import QuickDiagnosis from "@/components/home/QuickDiagnosis";
+import ComparisonSection from "@/components/home/ComparisonSection";
 import ConnectionOptions from "@/components/home/ConnectionOptions";
 import SetupSteps from "@/components/home/SetupSteps";
 import Troubleshooting from "@/components/home/Troubleshooting";
@@ -14,6 +15,8 @@ export default function Home() {
       <main>
         <Hero />
         <QuickDiagnosis />
+
+      <ComparisonSection />
         <ConnectionOptions />
         <SetupSteps />
         <Troubleshooting />
