@@ -283,32 +283,7 @@ export default function QuickDiagnosis() {
     if (!selectedValue) return;
 
     if (step === questions.length - 1) {
-      try {
-        window.localStorage.setItem(
-          "jmc-diagnosis",
-          JSON.stringify(answers),
-        );
-
-        window.dispatchEvent(
-          new CustomEvent("jmc:diagnosis", {
-            detail: answers,
-          }),
-        );
-      } catch {
-        // The diagnosis still works when storage is unavailable.
-      }
-
       setShowResult(true);
-
-      window.setTimeout(() => {
-        document
-          .getElementById("provider-list")
-          ?.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-      }, 350);
-
       return;
     }
 

@@ -1,20 +1,34 @@
 export type ConnectionType = "esim" | "physical-sim" | "pocket-wifi";
 
+export type ProviderId =
+  | "sakura-mobile"
+  | "ninja-wifi"
+  | "airalo"
+  | "ubigi";
+
 export type Provider = {
-  id: string;
+  id: ProviderId;
   name: string;
-  type: ConnectionType[];
+  shortName: string;
+  category: string;
+  award: string;
+  awardIcon: string;
+  types: ConnectionType[];
   bestFor: string;
+  summary: string;
   data: string;
   validity: string;
   hotspot: string;
   delivery: string;
-  priceLabel: string;
-  description: string;
   strengths: string[];
   caution: string;
-  recommended?: boolean;
+  priceLabel: string;
   officialUrl: string;
+
+  /**
+   * 承認後にここだけ変更してください。
+   * 空欄の場合は officialUrl が使用されます。
+   */
   affiliateUrl: string;
 };
 
@@ -22,94 +36,117 @@ export const providers: Provider[] = [
   {
     id: "sakura-mobile",
     name: "Sakura Mobile",
-    type: ["esim", "physical-sim", "pocket-wifi"],
-    bestFor: "Travellers who want Japan-focused English support",
-    data: "Varies by product",
+    shortName: "SM",
+    category: "Japan specialist",
+    award: "Best overall",
+    awardIcon: "01",
+    types: ["esim", "physical-sim", "pocket-wifi"],
+    bestFor:
+      "Travellers who want Japan-focused service and several connection choices.",
+    summary:
+      "A Japan-focused provider offering eSIM, physical SIM, pocket Wi-Fi, and longer-stay options.",
+    data: "Depends on the selected product",
     validity: "Short trips and longer stays",
     hotspot: "Depends on the selected product",
-    delivery: "Online setup, delivery, or pickup",
-    priceLabel: "Check latest price",
-    description:
-      "A Japan-focused provider offering eSIM, physical SIM, pocket Wi-Fi, and longer-stay options.",
+    delivery: "Digital setup, delivery, or pickup",
     strengths: [
       "Multiple connection types",
-      "English-language support",
-      "Useful for both short and long stays",
+      "Japan-focused English guidance",
+      "Useful for short and longer stays",
     ],
     caution:
-      "Compare the exact product because data limits, delivery methods, and activation rules differ.",
-    recommended: true,
+      "Check the exact plan because activation, data, pickup, and hotspot conditions differ.",
+    priceLabel: "Check current plans",
     officialUrl: "https://www.sakuramobile.jp/",
+    affiliateUrl: "",
+  },
+  {
+    id: "airalo",
+    name: "Airalo",
+    shortName: "AI",
+    category: "Digital eSIM",
+    award: "Best simple eSIM",
+    awardIcon: "02",
+    types: ["esim"],
+    bestFor:
+      "Solo travellers who want to install an eSIM before departure.",
+    summary:
+      "A digital eSIM marketplace with Japan plans that can be purchased and installed online.",
+    data: "Depends on the Japan plan",
+    validity: "Depends on the selected plan",
+    hotspot: "Check the selected plan",
+    delivery: "Instant digital delivery",
+    strengths: [
+      "No physical pickup",
+      "Install before travelling",
+      "Useful for multi-country trips",
+    ],
+    caution:
+      "The phone must support eSIM and be carrier-unlocked. Check when plan validity begins.",
+    priceLabel: "Check current plans",
+    officialUrl: "https://www.airalo.com/",
     affiliateUrl: "",
   },
   {
     id: "ninja-wifi",
     name: "NINJA WiFi",
-    type: ["esim", "physical-sim", "pocket-wifi"],
-    bestFor: "Families, groups, and airport pickup",
-    data: "Varies by plan",
-    validity: "Trip-based rental or prepaid plans",
-    hotspot: "Pocket Wi-Fi supports multiple devices",
-    delivery: "Airport counter, hotel, or delivery",
-    priceLabel: "Check latest price",
-    description:
-      "A well-known Japan travel connectivity service with strong pocket Wi-Fi and airport pickup options.",
+    shortName: "NW",
+    category: "Pocket Wi-Fi",
+    award: "Best for families",
+    awardIcon: "03",
+    types: ["pocket-wifi", "esim", "physical-sim"],
+    bestFor:
+      "Families, groups, laptops, and travellers who need several connected devices.",
+    summary:
+      "A Japan travel connectivity provider with pocket Wi-Fi and multiple collection options.",
+    data: "Depends on the selected plan",
+    validity: "Trip-based rental or prepaid plan",
+    hotspot: "Designed to connect several devices",
+    delivery: "Airport, hotel, or delivery",
     strengths: [
       "Good for groups",
-      "Multiple pickup options",
-      "Suitable for phones and laptops",
+      "Connect phones and laptops",
+      "Multiple receiving options",
     ],
     caution:
-      "Pocket Wi-Fi must be charged, carried, and usually returned after the rental.",
-    affiliateUrl: "",
+      "Pocket Wi-Fi needs charging and carrying, and rental devices normally need to be returned.",
+    priceLabel: "Check current plans",
     officialUrl: "https://ninjawifi.com/en/",
-  },
-  {
-    id: "airalo",
-    name: "Airalo",
-    type: ["esim"],
-    bestFor: "Solo travellers who want a quick eSIM setup",
-    data: "Varies by Japan plan",
-    validity: "Varies by plan",
-    hotspot: "Check the individual plan",
-    delivery: "Instant digital delivery",
-    priceLabel: "Check latest price",
-    description:
-      "A global eSIM marketplace offering digital plans that can be installed before departure.",
-    strengths: [
-      "No physical pickup",
-      "Can be installed before flying",
-      "Useful for multi-country travellers",
-    ],
-    caution:
-      "Your phone must support eSIM and be carrier-unlocked. Activation timing varies by plan.",
     affiliateUrl: "",
-    officialUrl: "https://www.airalo.com/",
   },
   {
     id: "ubigi",
     name: "Ubigi",
-    type: ["esim"],
-    bestFor: "Travellers comparing alternative eSIM plans",
-    data: "Varies by Japan plan",
-    validity: "Varies by plan",
-    hotspot: "Check the individual plan",
+    shortName: "UB",
+    category: "Digital eSIM",
+    award: "eSIM alternative",
+    awardIcon: "04",
+    types: ["esim"],
+    bestFor:
+      "Travellers who want to compare another digital eSIM option.",
+    summary:
+      "An international eSIM provider offering prepaid mobile-data plans for Japan.",
+    data: "Depends on the Japan plan",
+    validity: "Depends on the selected plan",
+    hotspot: "Check the selected plan",
     delivery: "Instant digital delivery",
-    priceLabel: "Check latest price",
-    description:
-      "An international eSIM provider offering prepaid data plans for Japan and other destinations.",
     strengths: [
-      "Digital setup",
-      "Useful alternative to other eSIM providers",
-      "Plans available for many destinations",
+      "Fully digital setup",
+      "Alternative eSIM choice",
+      "Plans for multiple destinations",
     ],
     caution:
-      "Confirm device compatibility, network coverage, validity, and hotspot rules before purchase.",
-    affiliateUrl: "",
+      "Confirm device support, coverage, validity, and hotspot conditions before purchase.",
+    priceLabel: "Check current plans",
     officialUrl: "https://cellulardata.ubigi.com/",
+    affiliateUrl: "",
   },
 ];
 
-export function getProviderUrl(provider: Provider) {
-  return provider.affiliateUrl || provider.officialUrl;
+export function getProviderUrl(provider: Provider): string {
+  return provider.affiliateUrl.trim() || provider.officialUrl;
+}
+
+export function isAffiliateLink(provider: Provider): boolean {
+  return provider.affiliateUrl.trim().length > 0;
 }
