@@ -2161,3 +2161,328 @@ legend > span {
     justify-content: space-between;
   }
 }
+
+/* =========================================================
+   Provider comparison table
+   ========================================================= */
+
+.provider-comparison-section {
+  padding: 108px 24px;
+  background: #f5f8f6;
+  color: #153640;
+}
+
+.provider-comparison-container {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+}
+
+.provider-comparison-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.62fr);
+  gap: 60px;
+  align-items: end;
+}
+
+.provider-comparison-eyebrow {
+  margin: 0 0 14px;
+  color: #e54d40;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.provider-comparison-heading h2 {
+  max-width: 760px;
+  margin: 0;
+  color: #0d303b;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.provider-comparison-heading > p {
+  margin: 0;
+  color: #61787f;
+  line-height: 1.75;
+}
+
+.provider-table-wrap {
+  margin-top: 52px;
+  overflow-x: auto;
+  border: 1px solid #dce6e2;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(25, 60, 64, 0.08);
+}
+
+.provider-table {
+  width: 100%;
+  min-width: 1120px;
+  border-collapse: collapse;
+}
+
+.provider-table th,
+.provider-table td {
+  padding: 19px 17px;
+  border-bottom: 1px solid #e5ece9;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.provider-table th {
+  background: #edf3f0;
+  color: #6c8086;
+  font-size: 0.69rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.provider-table td {
+  color: #425e66;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.provider-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.provider-table tbody tr:hover {
+  background: #fbfdfc;
+}
+
+.provider-name-cell strong,
+.provider-name-cell span {
+  display: block;
+}
+
+.provider-name-cell strong {
+  color: #153943;
+  font-size: 0.95rem;
+}
+
+.provider-name-cell span {
+  width: fit-content;
+  margin-top: 7px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #fff0ec;
+  color: #d7473a;
+  font-size: 0.61rem;
+  font-weight: 800;
+}
+
+.provider-type-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.provider-type-list span {
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: #edf4f1;
+  color: #34555e;
+  font-size: 0.66rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.provider-table-button {
+  min-width: 112px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 999px;
+  background: #ec4d3f;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.provider-mobile-grid {
+  display: none;
+}
+
+.provider-disclosure {
+  max-width: 900px;
+  margin: 19px auto 0;
+  color: #7a8e93;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .provider-comparison-heading {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .provider-table-wrap {
+    display: none;
+  }
+
+  .provider-mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 43px;
+  }
+
+  .provider-mobile-card {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    border: 1px solid #dce6e2;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(25, 60, 64, 0.07);
+  }
+
+  .provider-mobile-card-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .provider-mobile-card-heading h3 {
+    margin: 0;
+    color: #123640;
+    font-size: 1.55rem;
+    letter-spacing: -0.035em;
+  }
+
+  .provider-mobile-card-heading p {
+    margin: 9px 0 0;
+    color: #6a8086;
+    font-size: 0.83rem;
+    line-height: 1.55;
+  }
+
+  .provider-mobile-card-heading > span {
+    flex: 0 0 auto;
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: #fff0ec;
+    color: #d7473a;
+    font-size: 0.61rem;
+    font-weight: 850;
+  }
+
+  .provider-mobile-card > .provider-type-list {
+    margin-top: 18px;
+  }
+
+  .provider-mobile-card dl {
+    display: grid;
+    gap: 0;
+    margin: 20px 0 0;
+    border-top: 1px solid #e4ebe8;
+  }
+
+  .provider-mobile-card dl > div {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e4ebe8;
+  }
+
+  .provider-mobile-card dt {
+    color: #829398;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+  .provider-mobile-card dd {
+    margin: 0;
+    color: #35535b;
+    font-size: 0.77rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .provider-strengths {
+    display: grid;
+    gap: 9px;
+    margin-top: 20px;
+  }
+
+  .provider-strengths p {
+    display: flex;
+    gap: 9px;
+    margin: 0;
+    color: #405d65;
+    font-size: 0.78rem;
+  }
+
+  .provider-strengths span {
+    color: #238154;
+    font-weight: 900;
+  }
+
+  .provider-card-caution {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 13px;
+    background: #fff9e9;
+  }
+
+  .provider-card-caution strong {
+    color: #7d651d;
+    font-size: 0.73rem;
+  }
+
+  .provider-card-caution p {
+    margin: 5px 0 0;
+    color: #766a3b;
+    font-size: 0.74rem;
+    line-height: 1.5;
+  }
+
+  .provider-card-button {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: #ec4d3f;
+    color: #fff;
+    font-size: 0.77rem;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .provider-card-caution + .provider-card-button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .provider-comparison-section {
+    padding: 76px 15px;
+  }
+
+  .provider-mobile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .provider-mobile-card {
+    padding: 22px 19px;
+  }
+
+  .provider-mobile-card-heading {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+}
