@@ -5,16 +5,20 @@ import { providerReviews } from "@/data/providerReviews";
 export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date();
 
-  const providerReviewPages = providerReviews.map(
-    (provider) => ({
-      url: `${siteConfig.url}/reviews/${provider.slug}`,
-      lastModified: updated,
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
-    }),
-  );
+  const providerReviewPages = providerReviews.map((provider) => ({
+    url: `${siteConfig.url}/reviews/${provider.slug}`,
+    lastModified: updated,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
 
   return [
+    {
+      url: siteConfig.url,
+      lastModified: updated,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
     {
       url: `${siteConfig.url}/best-esim-japan`,
       lastModified: updated,
@@ -22,10 +26,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: siteConfig.url,
+      url: `${siteConfig.url}/sim-card-vs-esim`,
       lastModified: updated,
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 0.9,
     },
     {
       url: `${siteConfig.url}/about`,
