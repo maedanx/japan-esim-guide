@@ -3,7 +3,6 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
 import QuickDiagnosis from "@/components/home/QuickDiagnosis";
 import ProviderExperience from "@/components/home/ProviderExperience";
-import ProviderReviewLinks from "@/components/home/ProviderReviewLinks";
 import SetupSteps from "@/components/home/SetupSteps";
 import Troubleshooting from "@/components/home/Troubleshooting";
 import FaqSection from "@/components/home/FaqSection";
@@ -17,8 +16,6 @@ export default function Home() {
         <QuickDiagnosis />
 
       <ProviderExperience />
-
-      <ProviderReviewLinks />
         
         <SetupSteps />
         <Troubleshooting />
