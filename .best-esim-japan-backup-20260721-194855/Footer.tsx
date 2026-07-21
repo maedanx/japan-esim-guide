@@ -2,7 +2,6 @@ import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
 const guideLinks = [
-  { label: "Best eSIM for Japan", href: "/best-esim-japan" },
   { label: "30-sec check", href: "/#quick-check" },
   { label: "Compare", href: "/#provider-list" },
   { label: "Setup", href: "/#setup" },

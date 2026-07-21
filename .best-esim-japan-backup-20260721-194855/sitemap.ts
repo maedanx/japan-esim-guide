@@ -16,12 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: `${siteConfig.url}/best-esim-japan`,
-      lastModified: updated,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
       url: siteConfig.url,
       lastModified: updated,
       changeFrequency: "weekly",
