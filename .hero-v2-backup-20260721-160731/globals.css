@@ -73,8 +73,8 @@ h3 {
 }
 
 h1 {
-  margin-bottom: 22px;
-  font-size: clamp(3rem, 5.25vw, 4.95rem);
+  margin-bottom: 24px;
+  font-size: clamp(3rem, 7vw, 5.9rem);
   font-weight: 760;
 }
 
@@ -277,10 +277,7 @@ h3 {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - 76px);
-  display: flex;
-  align-items: center;
-  padding: 58px 0 72px;
+  padding: 104px 0 120px;
   background:
     radial-gradient(circle at 82% 18%, rgba(217, 238, 228, 0.95), transparent 30%),
     linear-gradient(145deg, #fbfcf9 0%, #f3f7f1 100%);
@@ -300,8 +297,8 @@ h3 {
 .hero-grid {
   display: grid;
   align-items: center;
-  gap: 44px;
-  grid-template-columns: minmax(0, 0.94fr) minmax(420px, 1.06fr);
+  gap: 78px;
+  grid-template-columns: minmax(0, 1.06fr) minmax(380px, 0.94fr);
 }
 
 .hero-content {
@@ -310,8 +307,8 @@ h3 {
 }
 
 .hero-lead {
-  max-width: 610px;
-  margin-bottom: 28px;
+  max-width: 680px;
+  margin-bottom: 34px;
   color: var(--ink-soft);
   font-size: clamp(1.05rem, 1.8vw, 1.28rem);
 }
@@ -325,9 +322,9 @@ h3 {
 .trust-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 22px;
+  gap: 12px 24px;
   padding: 0;
-  margin: 28px 0 0;
+  margin: 34px 0 0;
   color: var(--ink-soft);
   font-size: 0.9rem;
   list-style: none;
@@ -351,49 +348,9 @@ h3 {
   font-weight: 900;
 }
 
-.hero-proof {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 18px;
-  margin-top: 18px;
-  color: var(--ink-soft);
-  font-size: 0.82rem;
-}
-
-.hero-proof strong {
-  color: var(--ink);
-}
-
-.hero-proof-divider {
-  width: 1px;
-  height: 18px;
-  background: var(--line);
-}
-
-.scroll-cue {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 22px;
-  color: var(--ink-soft);
-  font-size: 0.78rem;
-  font-weight: 750;
-}
-
-.scroll-cue span {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.68);
-}
-
 .hero-visual {
   position: relative;
-  min-height: 500px;
+  min-height: 560px;
 }
 
 .hero-orbit {
@@ -415,7 +372,7 @@ h3 {
   z-index: 2;
   top: 50%;
   left: 50%;
-  width: min(370px, 80vw);
+  width: min(340px, 78vw);
   padding: 18px 20px 26px;
   transform: translate(-50%, -50%) rotate(2.5deg);
   border: 8px solid var(--ink);
@@ -546,13 +503,13 @@ h3 {
 }
 
 .floating-note--top {
-  top: 12%;
-  right: 1%;
+  top: 13%;
+  right: -2%;
 }
 
 .floating-note--bottom {
-  bottom: 10%;
-  left: 0;
+  bottom: 12%;
+  left: -3%;
 }
 
 .floating-note > span {
@@ -1268,8 +1225,7 @@ legend > span {
   }
 
   .hero {
-    min-height: auto;
-    padding: 64px 0 76px;
+    padding: 72px 0 86px;
   }
 
   .hero-grid,
