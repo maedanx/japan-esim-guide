@@ -682,6 +682,16 @@
     grid-template-columns: 1fr;
   }
 
+  .matchSummary,
+  .tripProfileHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tripProfileGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .resultMark {
     width: 135px;
     height: 135px;

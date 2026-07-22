@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
+import { connectivityProviders } from "@/data/connectivityProviders";
 import styles from "./page.module.css";
 
 const pageUrl = `${siteConfig.url}/compare`;
@@ -81,86 +82,7 @@ const connectionTypes = [
   },
 ];
 
-const providers = [
-  {
-    name: "Sakura Mobile",
-    category: "eSIM · SIM · Pocket Wi-Fi",
-    fit: "Travelers who value Japan-focused information and English-language guidance.",
-    strengths: [
-      "Several connection types",
-      "Japan-focused support",
-      "Options for short and longer stays",
-    ],
-    caution:
-      "Compare the exact product because setup, pickup, validity, and pricing differ.",
-    review: "/reviews/sakura-mobile",
-  },
-  {
-    name: "Airalo",
-    category: "eSIM",
-    fit: "Solo travelers who want a fully digital purchase and installation process.",
-    strengths: [
-      "No physical collection",
-      "Pre-trip installation",
-      "Simple digital plan selection",
-    ],
-    caution:
-      "Confirm phone compatibility, activation timing, data allowance, and hotspot rules.",
-    review: "/reviews/airalo",
-  },
-  {
-    name: "Ubigi",
-    category: "eSIM",
-    fit: "Travelers comparing alternative prepaid eSIM plans for Japan.",
-    strengths: [
-      "Digital setup",
-      "No rental device",
-      "Useful alternative for compatible phones",
-    ],
-    caution:
-      "Check current plan validity, supported networks, and installation instructions.",
-    review: "/reviews/ubigi",
-  },
-  {
-    name: "Nomad eSIM",
-    category: "eSIM",
-    fit: "Travelers who want to compare several digital data packages.",
-    strengths: [
-      "Remote purchase",
-      "No airport pickup",
-      "Multiple plan sizes may be available",
-    ],
-    caution:
-      "Plan conditions can change, so confirm activation and refund rules before purchase.",
-    review: "/reviews/nomad-esim",
-  },
-  {
-    name: "Japan Wireless",
-    category: "Pocket Wi-Fi · SIM",
-    fit: "Groups and travelers who need several devices connected during the trip.",
-    strengths: [
-      "Pocket Wi-Fi options",
-      "Useful for device sharing",
-      "Physical delivery or pickup may be available",
-    ],
-    caution:
-      "Check delivery deadlines, return method, battery use, and rental conditions.",
-    review: "/reviews/japan-wireless",
-  },
-  {
-    name: "NINJA WiFi",
-    category: "Pocket Wi-Fi",
-    fit: "Travelers who prefer a rental router and airport-oriented collection.",
-    strengths: [
-      "Multiple-device connection",
-      "No phone SIM replacement",
-      "Useful for families and groups",
-    ],
-    caution:
-      "Confirm pickup location, opening hours, return rules, and additional rental charges.",
-    review: "/reviews/ninja-wifi",
-  },
-];
+const providers = connectivityProviders;
 
 const faqs = [
   {
@@ -354,7 +276,7 @@ export default function ComparePage() {
                   <div className={styles.cardActions}>
                     <Link
                       className={styles.reviewButton}
-                      href={provider.review}
+                      href={provider.reviewHref}
                     >
                       Read our review
                     </Link>

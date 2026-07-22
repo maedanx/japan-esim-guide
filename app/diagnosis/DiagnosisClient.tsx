@@ -280,7 +280,7 @@ const results: Record<Method, ResultDefinition> = {
       "Keep airport Wi-Fi or your home carrier’s roaming available until the eSIM connection has been tested.",
     primaryHref: "/esim",
     primaryLabel: "Read the Japan eSIM guide",
-    secondaryHref: "/best-esim",
+    secondaryHref: "/best-esim-japan",
     secondaryLabel: "Compare eSIM options",
   },
   sim: {
@@ -526,6 +526,30 @@ export default function DiagnosisClient() {
   const result = results[analysis.primary];
   const alternative = results[analysis.alternative];
 
+  const tripProfile = answers
+    .map((answerIndex, questionIndex) => {
+      const question = questions[questionIndex];
+      const option = question?.options[answerIndex];
+
+      if (!question || !option) {
+        return null;
+      }
+
+      return {
+        label: question.title,
+        value: option.label,
+      };
+    })
+    .filter((item): item is { label: string; value: string } => item !== null);
+
+  const rankedMethods = methodOrder
+    .map((method) => ({ method, score: analysis.scores[method] }))
+    .sort((a, b) => b.score - a.score);
+
+  const scoreGap = Math.max(0, rankedMethods[0].score - rankedMethods[1].score);
+  const confidenceLabel =
+    scoreGap >= 8 ? "Strong match" : scoreGap >= 4 ? "Good match" : "Close match";
+
   return (
     <section className={styles.finderSection} id="internet-finder">
       <div className={styles.finderContainer}>
@@ -621,6 +645,34 @@ export default function DiagnosisClient() {
               </div>
             </div>
 
+            <div className={styles.matchSummary}>
+              <div>
+                <span>Recommendation confidence</span>
+                <strong>{confidenceLabel}</strong>
+              </div>
+
+              <p>
+                We compared eSIM, physical SIM, pocket Wi-Fi, roaming, and a
+                combined setup using all {questions.length} of your answers.
+              </p>
+            </div>
+
+            <div className={styles.tripProfile}>
+              <div className={styles.tripProfileHeading}>
+                <span>Your trip profile</span>
+                <small>Based on the answers you selected</small>
+              </div>
+
+              <div className={styles.tripProfileGrid}>
+                {tripProfile.map((item) => (
+                  <div className={styles.tripProfileItem} key={item.label}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div className={styles.resultColumns}>
               <article className={styles.resultPanel}>
                 <h3>Why it fits your trip</h3>
@@ -673,7 +725,7 @@ export default function DiagnosisClient() {
                 className={styles.resultPrimaryButton}
                 href={result.primaryHref}
               >
-                {result.primaryLabel}
+                {result.primaryLabel} →
               </Link>
 
               <Link
