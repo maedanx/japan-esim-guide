@@ -3,7 +3,12 @@ import Link from "next/link";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
-import { connectivityProviders } from "@/data/connectivityProviders";
+import {
+  connectivityProviders,
+  getProviderOutboundUrl,
+  hasProviderOutboundUrl,
+  isAffiliateProviderLink,
+} from "@/data/connectivityProviders";
 import styles from "./page.module.css";
 
 const pageUrl = `${siteConfig.url}/compare`;
@@ -281,12 +286,23 @@ export default function ComparePage() {
                       Read our review
                     </Link>
 
-                    <span
-                      className={styles.pendingButton}
-                      aria-label="Official provider link is being prepared"
-                    >
-                      Official link coming soon
-                    </span>
+                    {hasProviderOutboundUrl(provider) ? (
+                      <a
+                        className={styles.pendingButton}
+                        href={getProviderOutboundUrl(provider)}
+                        rel={isAffiliateProviderLink(provider) ? "sponsored nofollow noopener" : "noopener"}
+                        target="_blank"
+                      >
+                        Visit provider website
+                      </a>
+                    ) : (
+                      <span
+                        className={styles.pendingButton}
+                        aria-label="Official provider link is being prepared"
+                      >
+                        Official link coming soon
+                      </span>
+                    )}
                   </div>
                 </article>
               ))}

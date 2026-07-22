@@ -59,11 +59,11 @@ const categories: { icon: IconName; title: string; detail: string; href: string 
   { icon: "card", title: "Money", detail: "IC cards and payments", href: "/compare" },
 ];
 
-const products: { badge: string; title: string; detail: string; provider: string; rating: string; reviews: string; price: string; icon: IconName }[] = [
-  { badge: "BEST VALUE", title: "eSIM", detail: "10GB / 7 days", provider: "Sakura Mobile", rating: "4.6", reviews: "1,234", price: "¥2,980", icon: "signal" },
-  { badge: "MOST POPULAR", title: "Pocket WiFi", detail: "Unlimited / 7 days", provider: "NINJA WiFi", rating: "4.4", reviews: "2,045", price: "¥4,980", icon: "wifi" },
-  { badge: "", title: "JR Pass", detail: "7-Day Ordinary", provider: "Japan Rail Pass", rating: "4.8", reviews: "892", price: "¥29,650", icon: "train" },
-  { badge: "", title: "Suica Card", detail: "Deposit ¥500", provider: "Welcome Suica", rating: "4.6", reviews: "1,111", price: "¥2,000", icon: "card" },
+const products: { badge: string; title: string; detail: string; provider: string; note: string; href: string; icon: IconName }[] = [
+  { badge: "START HERE", title: "eSIM", detail: "Digital setup before arrival", provider: "Compare Japan eSIM options", note: "Best for compatible unlocked phones", href: "/best-esim-japan", icon: "signal" },
+  { badge: "GROUP OPTION", title: "Pocket WiFi", detail: "Share data across devices", provider: "Compare rental considerations", note: "Best for families and groups", href: "/pocket-wifi", icon: "wifi" },
+  { badge: "COMPATIBILITY", title: "Physical SIM", detail: "A removable SIM for your phone", provider: "Review setup and pickup needs", note: "Useful when eSIM is unavailable", href: "/sim-card", icon: "sim" },
+  { badge: "NOT SURE?", title: "30-sec check", detail: "Answer eight trip questions", provider: "Get a practical starting point", note: "No email or sign-up required", href: "/diagnosis", icon: "shield" },
 ];
 
 export default function HomeV2() {
@@ -473,14 +473,14 @@ export default function HomeV2() {
         <div className="container v2-trust-grid">
           <TrustItem icon="shield" title="Built for international travelers" detail="Clear guidance for first-time visitors" />
           <TrustItem icon="scale" title="Independent comparisons" detail="We compare. You choose." />
-          <TrustItem icon="refresh" title="Updated regularly" detail="Prices and details are checked" />
+          <TrustItem icon="refresh" title="Reviewed regularly" detail="Important conditions are rechecked" />
           <TrustItem icon="ban" title="No sponsored rankings" detail="Recommendations are not sold" />
         </div>
       </section>
 
       <section className="v2-section" id="explore">
         <div className="container">
-          <div className="v2-section-heading"><div><p>EXPLORE JAPAN</p><h2>Everything for a smoother trip.</h2></div><a href="/sitemap">View all guides →</a></div>
+          <div className="v2-section-heading"><div><p>EXPLORE JAPAN</p><h2>Everything for a smoother trip.</h2></div><a href="/compare">Browse comparison →</a></div>
           <div className="v2-category-grid">
             {categories.map((item) => (
               <a href={item.href} className="v2-category-card" key={item.title}>
@@ -496,11 +496,11 @@ export default function HomeV2() {
           <div className="v2-section-heading"><div><p>CURATED FOR YOUR TRIP</p><h2>Popular choices, compared clearly.</h2></div><a href="/compare">Compare all →</a></div>
           <div className="v2-product-grid">
             {products.map((item) => (
-              <a className="v2-product-card" href="/compare" key={item.title}>
+              <a className="v2-product-card" href={item.href} key={item.title}>
                 <div className="v2-product-top">{item.badge && <span>{item.badge}</span>}<i><Icon name={item.icon} /></i></div>
                 <h3>{item.title}</h3><p>{item.detail}</p><small>{item.provider}</small>
-                <div className="v2-rating"><span>★★★★★</span> {item.rating} ({item.reviews})</div>
-                <div className="v2-product-price"><strong>{item.price}</strong><b><ArrowIcon /></b></div>
+                <div className="v2-rating">{item.note}</div>
+                <div className="v2-product-price"><strong>Read guide</strong><b><ArrowIcon /></b></div>
               </a>
             ))}
           </div>

@@ -34,12 +34,40 @@ export async function generateMetadata({
     };
   }
 
+  const title = `${provider.name} Review for Japan Travelers`;
+  const description =
+    `${provider.name} review covering suitability, setup, ` +
+    `connection types, strengths, limitations, and what to ` +
+    `check before buying for a trip to Japan.`;
+  const canonicalPath = `/reviews/${provider.slug}`;
+
   return {
-    title: `${provider.name} Review for Japan Travelers`,
-    description:
-      `${provider.name} review covering suitability, setup, ` +
-      `connection types, strengths, limitations, and what to ` +
-      `check before buying for a trip to Japan.`,
+    title,
+    description,
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      type: "article",
+      url: canonicalPath,
+      title,
+      description,
+      siteName: "Japan X Trip",
+      images: [
+        {
+          url: "/images/brand/og-image-web.png",
+          width: 1200,
+          height: 630,
+          alt: `${provider.name} review by Japan X Trip`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/images/brand/og-image-web.png"],
+    },
   };
 }
 

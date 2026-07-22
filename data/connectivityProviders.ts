@@ -111,3 +111,11 @@ export function getConnectivityProvider(slug: string) {
 export function getProviderOutboundUrl(provider: ConnectivityProvider) {
   return provider.affiliateUrl || provider.officialUrl || provider.reviewHref;
 }
+
+export function hasProviderOutboundUrl(provider: ConnectivityProvider) {
+  return Boolean(provider.affiliateUrl || provider.officialUrl);
+}
+
+export function isAffiliateProviderLink(provider: ConnectivityProvider) {
+  return provider.affiliateStatus === "active" && Boolean(provider.affiliateUrl);
+}
