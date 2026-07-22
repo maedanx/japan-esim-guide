@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { siteConfig } from "@/data/site";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://japanxtrip.com"),
@@ -88,7 +89,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}        <GoogleAnalytics gaId="G-K5R671FEJE" />
+      </body>
     </html>
   );
 }

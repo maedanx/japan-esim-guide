@@ -22,6 +22,7 @@
     "qa:full": "./scripts/run-qa-suite.command"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.11",
     "@opennextjs/cloudflare": "^1.20.1",
     "next": "16.2.10",
     "react": "19.2.4",
