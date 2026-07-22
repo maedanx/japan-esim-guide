@@ -1,6 +1,6 @@
 #!/bin/zsh
-set -u
-PROJECT_DIR="/Users/maedan/Documents/Japan X Trip/01_Website/japan-esim-guide"
+set -euo pipefail
+PROJECT_DIR="/Users/maedan/Documents/Japan X Trip/01_Website/japan-x-trip"
 LOG_DIR="$PROJECT_DIR/logs"
 TIMESTAMP="$(date '+%Y%m%d-%H%M%S')"
 LOG_FILE="$LOG_DIR/japanxtrip-quick-qa-$TIMESTAMP.log"

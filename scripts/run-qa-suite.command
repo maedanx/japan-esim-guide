@@ -1,6 +1,6 @@
 #!/bin/zsh
-set -u
-PROJECT_DIR="/Users/maedan/Documents/Japan X Trip/01_Website/japan-esim-guide"
+set -euo pipefail
+PROJECT_DIR="/Users/maedan/Documents/Japan X Trip/01_Website/japan-x-trip"
 LOG_DIR="$PROJECT_DIR/logs"
 ARTIFACT_DIR="$PROJECT_DIR/artifacts/qa"
 REPORT_DIR="$PROJECT_DIR/reports/qa"
