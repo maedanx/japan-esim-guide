@@ -4,6 +4,9 @@ import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://japanxtrip.com"),
+  verification: {
+    google: "2STHAVqcDyjLGqYR63iBM_RyXw1-NyuFr3bI4ojLIn4",
+  },
 
   title: {
     default: "Japan X Trip | Travel Smarter in Japan",
