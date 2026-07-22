@@ -4,7 +4,7 @@ import LegalPage from "@/components/layout/LegalPage";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
   description:
-    "Learn how affiliate links may be used on Japan eSIM Guide and how they affect provider recommendations.",
+    "Learn how affiliate links may be used on Japan X Trip and how they affect provider recommendations.",
 };
 
 export default function AffiliateDisclosurePage() {
@@ -12,12 +12,12 @@ export default function AffiliateDisclosurePage() {
     <LegalPage
       eyebrow="Transparency"
       title="Affiliate Disclosure"
-      intro="Some links on Japan eSIM Guide may be affiliate links. This page explains what that means and how we keep recommendations independent."
+      intro="Some links on Japan X Trip may be affiliate links. This page explains what that means and how we keep recommendations independent."
       sections={[
         {
           title: "How affiliate links work",
           paragraphs: [
-            "Japan eSIM Guide may receive a commission when a visitor clicks an affiliate link and completes an eligible purchase.",
+            "Japan X Trip may receive a commission when a visitor clicks an affiliate link and completes an eligible purchase.",
             "This commission is paid by the provider or affiliate network and does not normally add an extra charge to the visitor’s purchase price.",
           ],
         },
@@ -40,14 +40,14 @@ export default function AffiliateDisclosurePage() {
         {
           title: "Prices and provider terms",
           paragraphs: [
-            "Prices, discounts, plan features, and provider terms can change without notice. Japan eSIM Guide may not always reflect a change immediately.",
+            "Prices, discounts, plan features, and provider terms can change without notice. Japan X Trip may not always reflect a change immediately.",
             "Visitors should confirm the final price, product details, compatibility rules, activation timing, cancellation policy, and refund conditions on the provider’s website before purchasing.",
           ],
         },
         {
           title: "Editorial independence",
           paragraphs: [
-            "Japan eSIM Guide aims to provide clear and practical information for international travelers.",
+            "Japan X Trip aims to provide clear and practical information for international travelers.",
             "Affiliate income may help support the operation and improvement of the website, but it does not remove the need to present important restrictions, disadvantages, or alternative options.",
           ],
         },

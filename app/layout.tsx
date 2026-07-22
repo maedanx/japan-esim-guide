@@ -3,32 +3,69 @@ import "./globals.css";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL("https://japanxtrip.com"),
+
   title: {
-    default: "Japan Internet Guide | Japan Made Clear",
-    template: "%s | Japan Made Clear",
+    default: "Japan X Trip | Travel Smarter in Japan",
+    template: "%s | Japan X Trip",
   },
+
   description: siteConfig.description,
-  applicationName: siteConfig.name,
+
+  applicationName: "Japan X Trip",
+
+  alternates: {
+    canonical: "/",
+  },
+
   keywords: [
+    "Japan travel",
     "Japan eSIM",
     "Japan SIM card",
     "Japan pocket Wi-Fi",
     "internet in Japan",
     "Japan travel internet",
   ],
+
+  icons: {
+    icon: [
+      {
+        url: "/images/brand/favicon-web.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/images/brand/favicon-web.png",
+        type: "image/png",
+      },
+    ],
+  },
+
   openGraph: {
-    title: "Japan Internet Guide | Japan Made Clear",
+    title: "Japan X Trip | Travel Smarter in Japan",
     description: siteConfig.description,
+    url: "https://japanxtrip.com",
     type: "website",
     locale: "en_US",
-    siteName: siteConfig.name,
+    siteName: "Japan X Trip",
+    images: [
+      {
+        url: "/images/brand/og-image-web.png",
+        width: 1200,
+        height: 630,
+        alt: "Japan X Trip",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Japan Internet Guide | Japan Made Clear",
+    title: "Japan X Trip | Travel Smarter in Japan",
     description: siteConfig.description,
+    images: ["/images/brand/og-image-web.png"],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -38,7 +75,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#102c3b",
+  themeColor: "#071f49",
 };
 
 export default function RootLayout({

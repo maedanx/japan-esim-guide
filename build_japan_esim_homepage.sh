@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-PROJECT_DIR="$HOME/Documents/Japan Made Clear/01_Website/japan-esim-guide"
+PROJECT_DIR="$HOME/Documents/Japan X Trip/01_Website/japan-esim-guide"
 
 if [ ! -d "$PROJECT_DIR" ]; then
   echo "❌ プロジェクトが見つかりません:"
@@ -33,7 +33,7 @@ mkdir -p \
 
 cat > src/data/site.ts <<'EOF'
 export const siteConfig = {
-  name: "Japan Made Clear",
+  name: "Japan X Trip",
   shortName: "JMC",
   description:
     "Simple, practical guidance for staying connected in Japan—from choosing an eSIM to fixing connection problems after arrival.",
@@ -122,7 +122,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a className="brand" href="#top" aria-label="Japan Made Clear home">
+        <a className="brand" href="#top" aria-label="Japan X Trip home">
           <span className="brand-mark" aria-hidden="true">日</span>
           <span>
             <strong>{siteConfig.name}</strong>
@@ -826,8 +826,8 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Japan Internet Guide | Japan Made Clear",
-    template: "%s | Japan Made Clear",
+    default: "Japan Internet Guide | Japan X Trip",
+    template: "%s | Japan X Trip",
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
@@ -839,7 +839,7 @@ export const metadata: Metadata = {
     "Japan travel internet",
   ],
   openGraph: {
-    title: "Japan Internet Guide | Japan Made Clear",
+    title: "Japan Internet Guide | Japan X Trip",
     description: siteConfig.description,
     type: "website",
     locale: "en_US",
@@ -847,7 +847,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Japan Internet Guide | Japan Made Clear",
+    title: "Japan Internet Guide | Japan X Trip",
     description: siteConfig.description,
   },
   robots: {

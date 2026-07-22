@@ -1,0 +1,55 @@
+name: Japan X Trip QA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium webkit
+
+      - name: Build
+        run: npm run build
+
+      - name: Start production server
+        run: |
+          nohup npx next start -H 127.0.0.1 -p 3100 > qa-server.log 2>&1 &
+          for i in {1..60}; do
+            curl -fsS http://127.0.0.1:3100 && break
+            sleep 1
+          done
+
+      - name: Playwright QA
+        env:
+          PLAYWRIGHT_BASE_URL: http://127.0.0.1:3100
+        run: npx playwright test --config=playwright.qa.config.ts
+
+      - name: Upload QA artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: japanxtrip-qa
+          path: |
+            artifacts/qa
+            reports/qa
+            qa-server.log

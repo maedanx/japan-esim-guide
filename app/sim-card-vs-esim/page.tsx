@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
 import styles from "./page.module.css";
 
 const pageUrl = `${siteConfig.url}/sim-card-vs-esim`;
-
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Japan SIM Card vs eSIM (2026): Which Is Better?",
   description:
@@ -200,11 +197,11 @@ export default function SimCardVsEsimPage() {
     mainEntityOfPage: pageUrl,
     author: {
       "@type": "Organization",
-      name: "Japan eSIM Guide",
+      name: "Japan X Trip",
     },
     publisher: {
       "@type": "Organization",
-      name: "Japan eSIM Guide",
+      name: "Japan X Trip",
     },
     datePublished: "2026-07-21",
     dateModified: "2026-07-21",
@@ -217,7 +214,7 @@ export default function SimCardVsEsimPage() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Japan eSIM Guide",
+        name: "Japan X Trip",
         item: siteConfig.url,
       },
       {
@@ -245,7 +242,7 @@ export default function SimCardVsEsimPage() {
   return (
     <>
       <Header />
-      <main>
+      <main data-build-marker="20260721-214638">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -281,13 +278,31 @@ export default function SimCardVsEsimPage() {
             </div>
 
             <div className={styles.heroActions}>
-              <Link className={styles.primaryButton} href="/#diagnosis">
+              <Link className={styles.primaryButton} href="/diagnosis">
                 Start the 30-second check
               </Link>
               <Link className={styles.secondaryButton} href="/best-esim-japan">
                 Compare Japan eSIMs
               </Link>
             </div>
+
+          </div>
+
+          <div className={styles.heroVisual}>
+            <figure
+              className={styles.heroImage}
+              data-hero-image="sim-card-vs-esim"
+            >
+              <Image
+                src="/images/article/sim-card-vs-esim/01-hero-esim-vs-sim.webp"
+                alt="Japan eSIM and physical SIM card comparison"
+                width={1600}
+                height={900}
+                priority
+                sizes="(max-width: 680px) 100vw, (max-width: 1500px) 94vw, 1440px"
+                className={styles.heroImageFile}
+              />
+            </figure>
           </div>
         </section>
 
@@ -588,7 +603,7 @@ export default function SimCardVsEsimPage() {
               devices, and priorities.
             </p>
             <div className={styles.heroActions}>
-              <Link className={styles.primaryButton} href="/#diagnosis">
+              <Link className={styles.primaryButton} href="/diagnosis">
                 Start the 30-second check
               </Link>
               <Link className={styles.secondaryButton} href="/best-esim-japan">

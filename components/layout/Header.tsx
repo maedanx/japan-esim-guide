@@ -1,30 +1,48 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-import { siteConfig } from "@/data/site";
+
+const navigation = [
+  { label: "Internet", href: "/esim" },
+  { label: "Transport", href: "/compare" },
+  { label: "Airport", href: "/airport" },
+  { label: "Tickets", href: "/compare" },
+  { label: "Guides", href: "/sitemap" },
+  { label: "Reviews", href: "/reviews/japan-wireless" },
+];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  const closeMenu = () => setOpen(false);
-
   return (
-    <header className="site-header">
-      <div className="container header-inner">
-        <a className="brand" href="#top" aria-label="Japan Made Clear home">
-          <span className="brand-mark" aria-hidden="true">日</span>
-          <span>
-            <strong>{siteConfig.name}</strong>
-            <small>Travel Japan with confidence</small>
+    <header className="site-header v2-header v22-header v23-header">
+      <div className="container header-inner v2-header-inner v22-header-inner v23-header-inner">
+        <Link
+          className="brand brand--image"
+          href="/"
+          aria-label="Japan X Trip home"
+          onClick={() => setOpen(false)}
+        >
+          <span className="header-logo-frame">
+            <Image
+              src="/images/brand/logo-header-web.png"
+              alt="Japan X Trip"
+              fill
+              priority
+              sizes="(max-width: 680px) 172px, 210px"
+              className="header-logo-image"
+            />
           </span>
-        </a>
+        </Link>
 
         <button
-          className="menu-button"
+          className="menu-button v23-menu-button"
           type="button"
           aria-expanded={open}
           aria-controls="primary-navigation"
-          onClick={() => setOpen((value) => !value)}
+          onClick={() => setOpen(!open)}
         >
           <span className="sr-only">Toggle navigation</span>
           <span />
@@ -34,19 +52,31 @@ export default function Header() {
 
         <nav
           id="primary-navigation"
-          className={`primary-navigation ${open ? "is-open" : ""}`}
+          className={`primary-navigation v2-navigation v23-navigation ${open ? "is-open" : ""}`}
           aria-label="Primary navigation"
         >
-          {siteConfig.navigation.map((item) => (
-            <a key={item.href} href={item.href} onClick={closeMenu}>
+          {navigation.map((item) => (
+            <Link key={item.href + item.label} href={item.href} onClick={() => setOpen(false)}>
               {item.label}
-            </a>
+            </Link>
           ))}
-          <a className="button button--small" href="#diagnosis" onClick={closeMenu}>
-            Find my best option
+          <button className="v2-language" type="button" aria-label="Language: English">
+            <GlobeIcon /> EN <span aria-hidden="true">⌄</span>
+          </button>
+          <a className="v2-header-cta" href="/#planner" onClick={() => setOpen(false)}>
+            Build My Travel Kit
           </a>
         </nav>
       </div>
     </header>
+  );
+}
+
+function GlobeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.3 2.5 3.5 5.5 3.5 9S14.3 18.5 12 21c-2.3-2.5-3.5-5.5-3.5-9S9.7 5.5 12 3Z" />
+    </svg>
   );
 }

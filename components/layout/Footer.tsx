@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
@@ -30,14 +31,19 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid footer-grid-expanded">
           <div>
-            <Link className="brand brand--footer" href="/">
-              <span className="brand-mark" aria-hidden="true">
-                日
-              </span>
-
-              <span>
-                <strong>{siteConfig.name}</strong>
-                <small>Clear answers for travel in Japan</small>
+            <Link
+              className="brand brand--footer brand--footer-image"
+              href="/"
+              aria-label={`${siteConfig.name} home`}
+            >
+              <span className="footer-logo-frame">
+                <Image
+                  src="/images/brand/logo-footer-web.png"
+                  alt="Japan X Trip"
+                  fill
+                  sizes="260px"
+                  className="footer-logo-image"
+                />
               </span>
             </Link>
 

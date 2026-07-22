@@ -456,3 +456,57 @@
     height: 36px;
   }
 }
+
+/* Article hero image: SIM Card vs eSIM */
+.heroVisual {
+  position: relative;
+  left: 50%;
+  width: min(1500px, calc(100vw - 32px));
+  margin: 40px 0 0;
+  transform: translateX(-50%);
+}
+
+.heroImage {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #dfe5ef;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow:
+    0 14px 34px rgba(16, 24, 40, 0.075),
+    0 3px 9px rgba(16, 24, 40, 0.03);
+}
+
+.heroImageFile {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 6.8;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .heroVisual {
+    width: calc(100vw - 32px);
+  }
+}
+
+@media (max-width: 680px) {
+  .heroVisual {
+    left: 50%;
+    width: calc(100vw - 32px);
+    margin-top: 28px;
+    transform: translateX(-50%);
+  }
+
+  .heroImage {
+    border-radius: 16px;
+  }
+
+  .heroImageFile {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+}

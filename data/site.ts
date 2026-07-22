@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Japan Made Clear",
-  shortName: "JMC",
+  name: "Japan X Trip",
+  shortName: "JXT",
   description:
-    "Simple, practical guidance for staying connected in Japan—from choosing an eSIM to fixing connection problems after arrival.",
-  url: "https://example.com",
+    "Clear, beginner-friendly guidance for travelers comparing eSIMs, SIM cards, pocket Wi-Fi, and internet options in Japan.",
+  url: "https://japanxtrip.com",
   email: "hello@example.com",
   navigation: [
     { label: "30-sec check", href: "#diagnosis" },

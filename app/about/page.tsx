@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/layout/LegalPage";
 
 export const metadata: Metadata = {
-  title: "About Japan eSIM Guide",
+  title: "About Japan X Trip",
   description:
-    "Learn why Japan eSIM Guide was created and how it helps international travelers compare internet options for Japan.",
+    "Learn why Japan X Trip was created and how it helps international travelers compare internet options for Japan.",
 };
 
 export default function AboutPage() {
@@ -12,12 +12,12 @@ export default function AboutPage() {
     <LegalPage
       eyebrow="About this guide"
       title="Clearer internet choices for travelers to Japan."
-      intro="Japan eSIM Guide helps international visitors understand and compare eSIMs, physical SIM cards, and pocket Wi-Fi without unnecessary jargon."
+      intro="Japan X Trip helps international visitors understand and compare eSIMs, physical SIM cards, and pocket Wi-Fi without unnecessary jargon."
       sections={[
         {
-          title: "What Japan eSIM Guide does",
+          title: "What Japan X Trip does",
           paragraphs: [
-            "Japan eSIM Guide provides beginner-friendly information for travelers who need mobile internet during a trip to Japan.",
+            "Japan X Trip provides beginner-friendly information for travelers who need mobile internet during a trip to Japan.",
             "The site explains the practical differences between eSIMs, physical SIM cards, and pocket Wi-Fi, and helps travelers narrow down their options according to device compatibility, trip length, data needs, and the number of people or devices traveling together.",
           ],
         },
@@ -44,8 +44,8 @@ export default function AboutPage() {
         {
           title: "Who operates the site",
           paragraphs: [
-            "The site is operated as Japan eSIM Guide. Personal names, a physical office address, and a public telephone number are not presented because they are not required for the current informational service.",
-            "Japan eSIM Guide is an independent travel-information website and is not a mobile network operator, internet service provider, airport authority, or government service.",
+            "The site is operated as Japan X Trip. Personal names, a physical office address, and a public telephone number are not presented because they are not required for the current informational service.",
+            "Japan X Trip is an independent travel-information website and is not a mobile network operator, internet service provider, airport authority, or government service.",
           ],
         },
         {

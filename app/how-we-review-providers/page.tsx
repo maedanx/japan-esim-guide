@@ -4,7 +4,7 @@ import LegalPage from "@/components/layout/LegalPage";
 export const metadata: Metadata = {
   title: "How We Review Providers",
   description:
-    "See how Japan eSIM Guide compares eSIM, physical SIM, and pocket Wi-Fi providers for international travelers.",
+    "See how Japan X Trip compares eSIM, physical SIM, and pocket Wi-Fi providers for international travelers.",
 };
 
 export default function ReviewMethodPage() {
@@ -17,7 +17,7 @@ export default function ReviewMethodPage() {
         {
           title: "Our approach",
           paragraphs: [
-            "Japan eSIM Guide compares eSIMs, physical SIM cards, and pocket Wi-Fi according to the needs of international travelers rather than treating one connection type or provider as the best choice for everyone.",
+            "Japan X Trip compares eSIMs, physical SIM cards, and pocket Wi-Fi according to the needs of international travelers rather than treating one connection type or provider as the best choice for everyone.",
             "Information is checked primarily from official provider websites, including product pages, setup instructions, frequently asked questions, and published terms when available.",
           ],
         },
@@ -87,7 +87,7 @@ export default function ReviewMethodPage() {
         {
           title: "Affiliate relationships and rankings",
           paragraphs: [
-            "Japan eSIM Guide may receive a commission when a visitor purchases through an affiliate link, at no additional cost to the visitor.",
+            "Japan X Trip may receive a commission when a visitor purchases through an affiliate link, at no additional cost to the visitor.",
             "Affiliate relationships do not determine rankings or recommendations. Recommendations are based on traveler needs and the comparison criteria described on this page.",
             "A provider may be included without an affiliate relationship, and an affiliate provider is not guaranteed a higher position or favorable recommendation.",
           ],
@@ -96,7 +96,7 @@ export default function ReviewMethodPage() {
           title: "Changes and limitations",
           paragraphs: [
             "Prices and plan details may change after they are checked. Product availability may also vary by travel date, device, nationality, country of purchase, pickup location, or other provider conditions.",
-            "Japan eSIM Guide does not independently operate the networks or fulfill provider orders. Final purchasing, activation, support, cancellation, and refund decisions are handled under the selected provider’s terms.",
+            "Japan X Trip does not independently operate the networks or fulfill provider orders. Final purchasing, activation, support, cancellation, and refund decisions are handled under the selected provider’s terms.",
           ],
         },
       ]}

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-PROJECT_DIR="$HOME/Documents/Japan Made Clear/01_Website/japan-esim-guide"
+PROJECT_DIR="$HOME/Documents/Japan X Trip/01_Website/japan-esim-guide"
 cd "$PROJECT_DIR"
 
 BACKUP_DIR=".hero-v2-backup-$(date +%Y%m%d-%H%M%S)"

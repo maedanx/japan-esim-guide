@@ -195,7 +195,7 @@ export default async function ProviderReviewPage({
 
                 <div>
                   <p>
-                    Japan eSIM Guide checks information primarily
+                    Japan X Trip checks information primarily
                     against official provider websites. We do not
                     claim that every provider has been personally
                     tested in every location, device, or network

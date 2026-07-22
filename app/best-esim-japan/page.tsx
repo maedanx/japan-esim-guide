@@ -177,11 +177,11 @@ export default function BestEsimJapanPage() {
     mainEntityOfPage: pageUrl,
     author: {
       "@type": "Organization",
-      name: "Japan eSIM Guide",
+      name: "Japan X Trip",
     },
     publisher: {
       "@type": "Organization",
-      name: "Japan eSIM Guide",
+      name: "Japan X Trip",
     },
     dateModified: "2026-07-21",
   };
@@ -193,7 +193,7 @@ export default function BestEsimJapanPage() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Japan eSIM Guide",
+        name: "Japan X Trip",
         item: siteConfig.url,
       },
       {

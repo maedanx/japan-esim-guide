@@ -32,7 +32,7 @@ export default function LegalPage({
           <div className="container information-hero-inner">
             <Link className="information-back-link" href="/">
               <span aria-hidden="true">←</span>
-              Back to Japan eSIM Guide
+              Back to Japan X Trip
             </Link>
 
             <p className="eyebrow">{eyebrow}</p>

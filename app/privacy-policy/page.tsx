@@ -4,7 +4,7 @@ import LegalPage from "@/components/layout/LegalPage";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Read the privacy practices currently applicable to Japan eSIM Guide.",
+    "Read the privacy practices currently applicable to Japan X Trip.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -12,12 +12,12 @@ export default function PrivacyPolicyPage() {
     <LegalPage
       eyebrow="Privacy"
       title="Privacy Policy"
-      intro="This policy describes the limited information practices currently applicable to Japan eSIM Guide."
+      intro="This policy describes the limited information practices currently applicable to Japan X Trip."
       sections={[
         {
           title: "Information you provide",
           paragraphs: [
-            "Japan eSIM Guide does not currently require visitors to create an account, subscribe to an email list, or submit personal information to use the 30-second check or read the website.",
+            "Japan X Trip does not currently require visitors to create an account, subscribe to an email list, or submit personal information to use the 30-second check or read the website.",
             "The site does not currently provide a public contact form. Visitors should not submit sensitive personal information through any third-party page linked from this website.",
           ],
         },
@@ -33,13 +33,13 @@ export default function PrivacyPolicyPage() {
           title: "Hosting and technical data",
           paragraphs: [
             "Like most websites, the hosting and delivery infrastructure may process technical request information needed to serve pages securely and reliably. This can include an IP address, browser type, requested page, date, time, and security-related request data.",
-            "Japan eSIM Guide is currently delivered using Cloudflare-related infrastructure. Technical processing performed by service providers is subject to their applicable terms and privacy practices.",
+            "Japan X Trip is currently delivered using Cloudflare-related infrastructure. Technical processing performed by service providers is subject to their applicable terms and privacy practices.",
           ],
         },
         {
           title: "Analytics and advertising",
           paragraphs: [
-            "Japan eSIM Guide does not currently claim to use Google Analytics, an advertising network, personalized advertising, or a newsletter-tracking service.",
+            "Japan X Trip does not currently claim to use Google Analytics, an advertising network, personalized advertising, or a newsletter-tracking service.",
             "If analytics, advertising, consent tools, or other tracking technologies are introduced later, this policy should be updated to describe the relevant services and choices.",
           ],
         },
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
           title: "Affiliate and external links",
           paragraphs: [
             "The site may link to third-party provider websites and may use affiliate links.",
-            "When a visitor follows an external link, the destination website may collect information according to its own privacy policy, cookie policy, and terms. Japan eSIM Guide does not control the privacy practices of independent third-party websites.",
+            "When a visitor follows an external link, the destination website may collect information according to its own privacy policy, cookie policy, and terms. Japan X Trip does not control the privacy practices of independent third-party websites.",
           ],
         },
         {
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
         {
           title: "Children’s privacy",
           paragraphs: [
-            "Japan eSIM Guide is a general travel-information website and is not specifically directed to children.",
+            "Japan X Trip is a general travel-information website and is not specifically directed to children.",
             "The current website does not intentionally request children to submit personal information.",
           ],
         },

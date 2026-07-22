@@ -49,3 +49,24 @@ next-env.d.ts
 !.dev.vars.example
 
 !.env.example
+**/.DS_Store
+.next/
+.open-next/
+.wrangler/
+logs/
+backups/
+
+# Japan X Trip local generated files
+logs/
+backups/
+artifacts/
+reports/
+test-results/
+mobile-touch-diagnostic/
+ui-redesign-package/
+.sim-card-vs-esim-backup-*/
+*.log
+*.zip
+*.backup-*
+playwright-report/
+blob-report/
