@@ -4,11 +4,11 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { siteConfig } from "@/data/site";
 import {
-  getProviderReviewUrl,
-  isProviderAffiliateLink,
-  providerReviews,
-  type ProviderReview,
-} from "@/data/providerReviews";
+  connectivityProviders,
+  getProviderDestination,
+  isAffiliateProviderLink,
+  type ConnectivityProvider,
+} from "@/data/connectivityProviders";
 
 const pageUrl = `${siteConfig.url}/best-esim-japan`;
 
@@ -126,13 +126,13 @@ const faqs = [
   },
 ];
 
-function getOrderedProviders(): ProviderReview[] {
+function getOrderedProviders(): ConnectivityProvider[] {
   return displayOrder
     .map((slug) =>
-      providerReviews.find((provider) => provider.slug === slug),
+      connectivityProviders.find((provider) => provider.slug === slug),
     )
     .filter(
-      (provider): provider is ProviderReview =>
+      (provider): provider is ConnectivityProvider =>
         provider !== undefined,
     );
 }
@@ -142,16 +142,19 @@ function ProviderExternalLink({
   className,
   children,
 }: {
-  provider: ProviderReview;
+  provider: ConnectivityProvider;
   className: string;
   children: React.ReactNode;
 }) {
-  const affiliate = isProviderAffiliateLink(provider);
+  const affiliate = isAffiliateProviderLink(provider);
+  const destination = getProviderDestination(provider);
+
+  if (!destination) return null;
 
   return (
     <a
       className={className}
-      href={getProviderReviewUrl(provider)}
+      href={destination}
       target="_blank"
       rel={
         affiliate
@@ -427,7 +430,7 @@ export default function BestEsimJapanPage() {
                       </span>
 
                       <div>
-                        <p>{provider.category}</p>
+                        <p>{provider.tagline}</p>
                         <h3>{provider.name}</h3>
                       </div>
                     </div>
@@ -440,7 +443,7 @@ export default function BestEsimJapanPage() {
                       <div>
                         <h4>Potential advantages</h4>
                         <ul>
-                          {provider.strengths
+                          {provider.reviewStrengths
                             .slice(0, 3)
                             .map((item) => (
                               <li key={item}>{item}</li>

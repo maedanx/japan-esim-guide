@@ -4,11 +4,12 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import {
-  getProviderReview,
-  getProviderReviewUrl,
-  isProviderAffiliateLink,
-  providerReviews,
-} from "@/data/providerReviews";
+  connectivityProviders,
+  getConnectivityProvider,
+  getProviderCtaLabel,
+  getProviderDestination,
+  isAffiliateProviderLink,
+} from "@/data/connectivityProviders";
 
 type ProviderReviewPageProps = {
   params: Promise<{
@@ -17,7 +18,7 @@ type ProviderReviewPageProps = {
 };
 
 export function generateStaticParams() {
-  return providerReviews.map((provider) => ({
+  return connectivityProviders.map((provider) => ({
     slug: provider.slug,
   }));
 }
@@ -26,7 +27,7 @@ export async function generateMetadata({
   params,
 }: ProviderReviewPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const provider = getProviderReview(slug);
+  const provider = getConnectivityProvider(slug);
 
   if (!provider) {
     return {
@@ -75,13 +76,15 @@ export default async function ProviderReviewPage({
   params,
 }: ProviderReviewPageProps) {
   const { slug } = await params;
-  const provider = getProviderReview(slug);
+  const provider = getConnectivityProvider(slug);
 
   if (!provider) {
     notFound();
   }
 
-  const affiliate = isProviderAffiliateLink(provider);
+  const affiliate = isAffiliateProviderLink(provider);
+  const destination = getProviderDestination(provider);
+  const ctaLabel = getProviderCtaLabel(provider, "Check current plans");
 
   return (
     <>
@@ -95,7 +98,7 @@ export default async function ProviderReviewPage({
               Back to provider comparison
             </Link>
 
-            <p className="eyebrow">{provider.category}</p>
+            <p className="eyebrow">{provider.tagline}</p>
 
             <h1>{provider.name} review</h1>
 
@@ -110,25 +113,31 @@ export default async function ProviderReviewPage({
             </div>
 
             <div className="review-hero-actions">
-              <a
-                className="button"
-                href={getProviderReviewUrl(provider)}
-                target="_blank"
-                rel={
-                  affiliate
-                    ? "sponsored nofollow noopener noreferrer"
-                    : "noopener noreferrer"
-                }
-              >
-                Check current plans
-                <span aria-hidden="true">→</span>
-              </a>
+              {destination ? (
+                <a
+                  className="button"
+                  href={destination}
+                  target="_blank"
+                  rel={
+                    affiliate
+                      ? "sponsored nofollow noopener noreferrer"
+                      : "noopener noreferrer"
+                  }
+                >
+                  {ctaLabel}
+                  <span aria-hidden="true">→</span>
+                </a>
+              ) : null}
 
               <Link
                 className="review-secondary-link"
                 href="/how-we-review-providers"
               >
                 See our review method
+              </Link>
+
+              <Link className="review-secondary-link" href="/diagnosis">
+                Not sure yet? Take the 30-sec check
               </Link>
             </div>
           </div>
@@ -179,7 +188,7 @@ export default async function ProviderReviewPage({
                 <h2>Strengths</h2>
 
                 <div className="review-check-grid">
-                  {provider.strengths.map((item) => (
+                  {provider.reviewStrengths.map((item) => (
                     <div key={item}>
                       <span aria-hidden="true">✓</span>
                       <p>{item}</p>
@@ -260,19 +269,21 @@ export default async function ProviderReviewPage({
                 </div>
 
                 <div className="review-final-actions">
-                  <a
-                    className="button"
-                    href={getProviderReviewUrl(provider)}
-                    target="_blank"
-                    rel={
-                      affiliate
-                        ? "sponsored nofollow noopener noreferrer"
-                        : "noopener noreferrer"
-                    }
-                  >
-                    Check current plans
-                    <span aria-hidden="true">→</span>
-                  </a>
+                  {destination ? (
+                    <a
+                      className="button"
+                      href={destination}
+                      target="_blank"
+                      rel={
+                        affiliate
+                          ? "sponsored nofollow noopener noreferrer"
+                          : "noopener noreferrer"
+                      }
+                    >
+                      {ctaLabel}
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  ) : null}
 
                   <Link href="/#provider-list">
                     Compare all providers

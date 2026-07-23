@@ -279,6 +279,15 @@ export default function PocketWifiPage() {
                 <li>Visitors who prefer a normal Wi-Fi connection</li>
               </ul>
 
+              <p className={styles.heroCardLabel} style={{ marginTop: 18 }}>
+                Less ideal if
+              </p>
+
+              <ul>
+                <li>You are traveling solo with one compatible phone</li>
+                <li>You would rather not carry, charge, or return equipment</li>
+              </ul>
+
               <Link href="/diagnosis">Take the 30-sec check →</Link>
             </aside>
           </div>
@@ -480,11 +489,12 @@ export default function PocketWifiPage() {
             <div className={styles.providerGrid}>
               <article className={styles.providerCard}>
                 <div>
-                  <p>Pocket Wi-Fi · SIM</p>
+                  <p>Pocket Wi-Fi · eSIM</p>
                   <h3>Japan Wireless</h3>
                 </div>
 
                 <p>
+                  Offers a Pocket WiFi rental alongside an eSIM option.
                   Compare delivery, airport collection, return instructions,
                   included equipment, and current rental conditions.
                 </p>

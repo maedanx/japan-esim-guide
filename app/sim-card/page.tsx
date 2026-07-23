@@ -279,6 +279,15 @@ export default function SimCardPage() {
                 <li>You can collect or receive the card before use</li>
               </ul>
 
+              <span style={{ display: "block", marginTop: 18 }}>
+                Less ideal if
+              </span>
+
+              <ul>
+                <li>Your phone is carrier-locked</li>
+                <li>You would rather not remove your home SIM</li>
+              </ul>
+
               <Link href="/sim-card-vs-esim">
                 Compare physical SIM and eSIM →
               </Link>
@@ -440,6 +449,10 @@ export default function SimCardPage() {
 
                 <Link href="/pocket-wifi">
                   Read the pocket Wi-Fi guide
+                </Link>
+
+                <Link href="/compare#providers">
+                  Browse SIM &amp; travel providers
                 </Link>
 
                 <Link href="/compare">

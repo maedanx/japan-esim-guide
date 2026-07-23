@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/data/site";
-import { providerReviews } from "@/data/providerReviews";
+import { connectivityProviders } from "@/data/connectivityProviders";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date();
 
-  const providerReviewPages = providerReviews.map((provider) => ({
+  const providerReviewPages = connectivityProviders.map((provider) => ({
     url: `${siteConfig.url}/reviews/${provider.slug}`,
     lastModified: updated,
     changeFrequency: "monthly" as const,

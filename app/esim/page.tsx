@@ -260,6 +260,15 @@ export default function EsimPage() {
                 <li>You do not want to collect or return equipment</li>
               </ul>
 
+              <p className={styles.heroCardLabel} style={{ marginTop: 18 }}>
+                Less ideal if
+              </p>
+
+              <ul>
+                <li>Your phone is carrier-locked or does not support eSIM</li>
+                <li>Several travelers or devices need to share one connection</li>
+              </ul>
+
               <Link href="/diagnosis">Take the 30-sec check →</Link>
             </div>
           </div>
@@ -396,6 +405,10 @@ export default function EsimPage() {
 
                 <Link href="/best-esim-japan">
                   See Japan eSIM provider comparisons
+                </Link>
+
+                <Link href="/reviews/japan-wireless">
+                  Read the Japan Wireless review
                 </Link>
               </div>
             </div>

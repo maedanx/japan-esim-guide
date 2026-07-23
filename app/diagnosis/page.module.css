@@ -722,3 +722,297 @@
     margin-top: 8px;
   }
 }
+
+/* Diagnosis v2 additions */
+.continueButton {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: #ff402f;
+  padding: 0 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+}
+
+.continueButton:disabled {
+  background: #cbd3df;
+  cursor: not-allowed;
+}
+
+.privacyNote {
+  margin: 20px 0 0;
+  color: #718096;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.providerSection {
+  margin-top: 28px;
+  border: 1px solid #dce4ee;
+  border-radius: 22px;
+  background: #f7f9fc;
+  padding: 26px;
+}
+
+.providerHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.providerHeading span {
+  color: #071f49;
+  font-weight: 900;
+}
+
+.providerHeading small,
+.providerDisclosure {
+  color: #718096;
+}
+
+.providerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.providerCard {
+  border: 1px solid #dce4ee;
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 22px;
+}
+
+.providerCard > span {
+  color: #ff402f;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.providerCard h3 {
+  margin: 9px 0 8px;
+  color: #071f49;
+}
+
+.providerCard p {
+  margin: 0 0 16px;
+  color: #59677b;
+  line-height: 1.65;
+}
+
+.providerCard a {
+  color: #0a4f9d;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.providerDisclosure {
+  margin: 16px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.answerButton:focus-visible,
+.backButton:focus-visible,
+.continueButton:focus-visible,
+.resultFooter button:focus-visible,
+.resultPrimaryButton:focus-visible,
+.resultSecondaryButton:focus-visible,
+.providerCard a:focus-visible {
+  outline: 3px solid #ff9a8f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .questionFooter {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .backButton,
+  .continueButton {
+    width: 100%;
+  }
+
+  .providerHeading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .providerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .providerSection {
+    padding: 20px;
+  }
+}
+
+.fitComparison {
+  margin-top: 28px;
+  border: 1px solid #dce4ee;
+  border-radius: 22px;
+  background: #ffffff;
+  padding: 26px;
+}
+
+.fitComparisonHeading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.fitComparisonHeading span {
+  color: #ff402f;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.fitComparisonHeading h3 {
+  margin: 7px 0 0;
+  color: #071f49;
+  font-size: 1.25rem;
+}
+
+.fitComparisonHeading a {
+  color: #0a4f9d;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.fitRows {
+  display: grid;
+  gap: 16px;
+}
+
+.fitRow {
+  display: grid;
+  grid-template-columns: minmax(145px, 0.8fr) minmax(180px, 2fr) minmax(105px, auto);
+  gap: 16px;
+  align-items: center;
+}
+
+.fitRow > div:first-child {
+  display: grid;
+  gap: 3px;
+}
+
+.fitRow strong {
+  color: #071f49;
+}
+
+.fitRow span,
+.fitRow small,
+.fitNote {
+  color: #718096;
+}
+
+.fitRow small {
+  font-weight: 750;
+  text-align: right;
+}
+
+.fitBar {
+  height: 11px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e8edf4;
+}
+
+.fitBar > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #0c4d97;
+}
+
+.fitNote {
+  margin: 18px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.bottomCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 28px;
+  border-radius: 22px;
+  background: #071f49;
+  padding: 24px;
+  color: #ffffff;
+}
+
+.bottomCta > div {
+  display: grid;
+  gap: 6px;
+}
+
+.bottomCta strong {
+  font-size: 1.08rem;
+}
+
+.bottomCta span {
+  color: #d8e2ef;
+  line-height: 1.6;
+}
+
+.bottomCta a {
+  display: inline-flex;
+  min-height: 48px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #ff402f;
+  padding: 0 21px;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.fitComparisonHeading a:focus-visible,
+.bottomCta a:focus-visible {
+  outline: 3px solid #ff9a8f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .fitComparison {
+    padding: 20px;
+  }
+
+  .fitComparisonHeading,
+  .bottomCta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .fitRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .fitRow small {
+    text-align: left;
+  }
+
+  .bottomCta a {
+    width: 100%;
+  }
+}

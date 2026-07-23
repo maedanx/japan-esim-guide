@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "30-Second Japan Internet Finder",
     description:
-      "Find the right internet option for your Japan trip in eight questions.",
+      "Find the right internet option for your Japan trip in seven questions.",
     images: ["/images/brand/og-image.png"],
   },
 };
@@ -94,13 +94,13 @@ export default function DiagnosisPage() {
               <h1>Find your best Japan internet option in 30 seconds</h1>
 
               <p className={styles.heroText}>
-                Answer eight simple questions about your phone, travel group,
+                Answer seven simple questions about your phone, travel group,
                 devices, data use, and arrival plan. We will recommend an eSIM,
                 physical SIM, pocket Wi-Fi, roaming, or a combined setup.
               </p>
 
               <div className={styles.heroBadges}>
-                <span>8 quick questions</span>
+                <span>7 quick questions</span>
                 <span>No sign-up</span>
                 <span>Free result</span>
               </div>

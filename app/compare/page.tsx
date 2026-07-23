@@ -5,7 +5,8 @@ import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
 import {
   connectivityProviders,
-  getProviderOutboundUrl,
+  getProviderCtaLabel,
+  getProviderDestination,
   hasProviderOutboundUrl,
   isAffiliateProviderLink,
 } from "@/data/connectivityProviders";
@@ -289,11 +290,11 @@ export default function ComparePage() {
                     {hasProviderOutboundUrl(provider) ? (
                       <a
                         className={styles.pendingButton}
-                        href={getProviderOutboundUrl(provider)}
+                        href={getProviderDestination(provider)}
                         rel={isAffiliateProviderLink(provider) ? "sponsored nofollow noopener" : "noopener"}
                         target="_blank"
                       >
-                        Visit provider website
+                        {getProviderCtaLabel(provider, "Visit provider website")}
                       </a>
                     ) : (
                       <span

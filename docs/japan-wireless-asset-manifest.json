@@ -1,0 +1,402 @@
+[
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/logo/japan-wireless-logo-variant-01.png",
+    "bytes": 168634,
+    "sha256": "ea56152b9d966425b3d30e25349440e74efad889540d2c665bc6a7fdd278b3f9"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/logo/japan-wireless-logo-variant-02.png",
+    "bytes": 174833,
+    "sha256": "7844fee9edb34352ac6367cabab78460a73e7a4c731168fa369caf91fff8b7de"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/logo/japan-wireless-logo-variant-03.png",
+    "bytes": 136953,
+    "sha256": "d153f2a30901b3ac0b5a3d9313643817e632adc9367a4a268a412ee4d7231d2a"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/logo/japan-wireless-logo-white.png",
+    "bytes": 74864,
+    "sha256": "15c11d8e62199f29070ad1c68ca528f19cf0b24df40b12019c60b72b2d5490e3"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-asakusa-1080x1920.png",
+    "bytes": 2203289,
+    "sha256": "9e7257f7f570bbe581490b072784d4e5dfa06164786e9c667bd64836895c2475"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-asakusa-1200x1200.png",
+    "bytes": 1809123,
+    "sha256": "ac2404576a5fdedb60b35a837a99f4c552e5b4c2affdb258da80b1c6597148f6"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-asakusa-1200x300.png",
+    "bytes": 513579,
+    "sha256": "58ec8fe314ec7550db94b467c6053bf9500bbc374b7bcc655d0ce905980f31f7"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-asakusa-1200x628.png",
+    "bytes": 1212293,
+    "sha256": "a7e52e4582dee26de84321a9ed90a6442fd5cf653022393eba301d22ac4c8bd6"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1080x1920.png",
+    "bytes": 1419011,
+    "sha256": "09d6552c25a7147cda761957782c7a81495ceaff2567b66d3758d877dba42056"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1200x1200-2.png",
+    "bytes": 1246143,
+    "sha256": "9dc245586badef4d9f44e8bb911f3a26ef0930c0537d90f82ab2fb186b38f445"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1200x1200.png",
+    "bytes": 1245806,
+    "sha256": "244df5e594c89d3ebd7ba7c0140bf1129000b5818e273349ea65076e934fc759"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1200x300-2.png",
+    "bytes": 416154,
+    "sha256": "2b44640bc04816d5156282dff4691993cb0dd8145ed90874c588885bbd738d62"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1200x300.png",
+    "bytes": 456602,
+    "sha256": "fa14c14d1fa43e89d7fbb242308e14e48d8d8a1a39df8b167df32b3355b650e1"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-fuji-1200x628.png",
+    "bytes": 769291,
+    "sha256": "acfe5e904c338f1aef70293ee5c2bbc91e76ddf2bc553301481588ea5aff629e"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-miyajima-1080x1920.png",
+    "bytes": 1380919,
+    "sha256": "896040479b43a98d3489e3d10ababe0d90127c6042f2b3a1e3a381415e8b46f7"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-miyajima-1200x628.png",
+    "bytes": 849730,
+    "sha256": "428e59257faa0c654b15ee2008cd10d7b5f7eb844ca1e127cb3bdb1cf31583d4"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-osaka-1080x1920.png",
+    "bytes": 2497326,
+    "sha256": "b8f9675d058c6ceca6c31818e872d585861705e5fdf2f676eff12d54f3e90b98"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-osaka-1200x1200.png",
+    "bytes": 2096338,
+    "sha256": "1d3bd15fca9d4a083f48db7c4655933aaa5436fd2d185b9c2aeb32bee9380ee7"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-osaka-1200x300.png",
+    "bytes": 574657,
+    "sha256": "8e2acad28269d81b6c7d8b7b104abb03101a00cdcf6f8f3ad2795476ddd8dab8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-osaka-1200x628.png",
+    "bytes": 1261426,
+    "sha256": "34b3a360849bb7fd4e7934bc8c15304d377240d083d0c9a189e0b228f6a69355"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-shibuya-1080x1920.png",
+    "bytes": 2431880,
+    "sha256": "6f1cc3939d5e6951110acf337af3a16b57b6584474337e30505a4a3de2dec753"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-shibuya-1200x1200.png",
+    "bytes": 2005147,
+    "sha256": "d65f3656e28802232b9e71df71a2f80d7563c42d65553504ffc1b2afdca3d581"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-shibuya-1200x300.png",
+    "bytes": 625735,
+    "sha256": "5f70d3579123f12fc093757bc38dcaf2e26ce7257b85eaab8b3364740bb13551"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-shibuya-1200x628.png",
+    "bytes": 1336452,
+    "sha256": "72c25e645af03163cb3bd8d34defa8e9f7385da286faebdc8d88e5b61483230a"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-tokyo-tower-1080x1920.png",
+    "bytes": 2892310,
+    "sha256": "c35baa4556f6fd0e9314ace10c75a06c9abe9f43611d299ab3c4e5218eb7910c"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-tokyo-tower-1200x1200.png",
+    "bytes": 2117123,
+    "sha256": "55fe17760a7a33bdab74364e52c762c0afbfd5cc151b81668e7515ac9b905bbe"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-tokyo-tower-1200x300.png",
+    "bytes": 662453,
+    "sha256": "012bbffa35dfd88fad5c4abf76ce2db6d3cab13fff11eaa302fcbd2374c2d801"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-tokyo-tower-1200x628.png",
+    "bytes": 1344346,
+    "sha256": "54a1fd2d0a19c540615c12e6345ba496cb472a01df5a4d516049fcb0c5fd078f"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/logo/japan-wireless-esim-logo.png",
+    "bytes": 16641,
+    "sha256": "fcf2940697855cfc3403897a4bb6a4c0be82fc8097bb013e0cda00089723d28c"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/banners/japan-wireless-esim-1080x1920.png",
+    "bytes": 2054776,
+    "sha256": "48246016d7a783a28df0d06c77536a55829e94ce3f5ab32571553e8a04847db8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/banners/japan-wireless-esim-1200x1200.png",
+    "bytes": 1453661,
+    "sha256": "b04b06ff4b30a208bb87e70bc4b0189e4f7cf31e4d54b47bf2352c06996c20a7"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/banners/japan-wireless-esim-1200x300.png",
+    "bytes": 375390,
+    "sha256": "68d14095401c387a972c0416566944b575a419f8f8008ea17871b960dddef449"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/banners/japan-wireless-esim-1200x628.png",
+    "bytes": 1121342,
+    "sha256": "d1ecb5ed52b84666ff027840ff337757994146b05f0204f341a87737ba99a1f5"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/logo/japan-bullet-train-logo-white.png",
+    "bytes": 201353,
+    "sha256": "e2d49f6893a480aff5160ac10f4f5b346faba12172ae0b18518eecc279643407"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1080x1920.png",
+    "bytes": 2431003,
+    "sha256": "a1fe48432e9ad76742e654b13b09afba1957c6424b1aa37e8232818e5278e46a"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1200x1200.png",
+    "bytes": 1614062,
+    "sha256": "43fbd407b8d235f068ae022306ba03faac4a7827dbfcb8121c3d68335d44ba32"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1200x300-blue.png",
+    "bytes": 474467,
+    "sha256": "7bd8a72b5d48877004d7d608a6faa4aed14284b61da3b423545ce62842e32d5e"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1200x300-white.png",
+    "bytes": 435821,
+    "sha256": "e199dc97a9ad60c7acb1a1b9378d88870bb194b11750e8ba43f6aa86a7179511"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1200x628.png",
+    "bytes": 966126,
+    "sha256": "123a9935c784962e3a017bc6566f64d00e970755abdef6e4157286fe0520c7ae"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/akita-kanto-festival/japan-bullet-train-akita-kanto-festival-1080x1920.png",
+    "bytes": 1972338,
+    "sha256": "7e02b922cc4b725ba9c7412ae9f277dc6cbd53449e4b23ce68a1da8dc56fb373"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/akita-kanto-festival/japan-bullet-train-akita-kanto-festival-1200x1200.png",
+    "bytes": 1572402,
+    "sha256": "961f6130dab7d9f42b95667bc02826a624c08b6640a426738245d976332e9baa"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/akita-kanto-festival/japan-bullet-train-akita-kanto-festival-1200x300.png",
+    "bytes": 454883,
+    "sha256": "af369092a97932b8d74cb6faf439913d34ecbf69e7644e20b390c6a1056d4c35"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/akita-kanto-festival/japan-bullet-train-akita-kanto-festival-1200x628.png",
+    "bytes": 1313092,
+    "sha256": "29d41558deb4afca8580d345d70c696f351cab0b5300bc25263fbea43f9ec9e4"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/aomori-nebuta-festival/japan-bullet-train-aomori-nebuta-festival-1080x1920.png",
+    "bytes": 2147727,
+    "sha256": "bc6c6eaf3b73dbc1aa336348c3af3c1b9be9cdaac41520618fc5fc1b54bec7fc"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/aomori-nebuta-festival/japan-bullet-train-aomori-nebuta-festival-1200x1200.png",
+    "bytes": 1695967,
+    "sha256": "b033af59e62bc9a11f20db762726c9d2524e6472ead5ec9685559a4a0d7bc6ac"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/aomori-nebuta-festival/japan-bullet-train-aomori-nebuta-festival-1200x300.png",
+    "bytes": 452031,
+    "sha256": "ccac6e8da2743c3d925aacb7e1f405cf3483f3a6198fe0850b1d2e157f447771"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/aomori-nebuta-festival/japan-bullet-train-aomori-nebuta-festival-1200x628.png",
+    "bytes": 1350579,
+    "sha256": "f939a83e43b8ade6e0a4df294bddd5768818cf2632739cc99223dddcb226f7d8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/sendai-tanabata-festival/japan-bullet-train-sendai-tanabata-festival-1080x1920.png",
+    "bytes": 1735215,
+    "sha256": "c4b9699ed53b834550c2cfa7f7dc84d708552891993aa6fa5aa4f7705021d6fc"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/sendai-tanabata-festival/japan-bullet-train-sendai-tanabata-festival-1200x1200.png",
+    "bytes": 1635564,
+    "sha256": "60cf2e8712fedd607b536e7855c3d94516ba152ffa8498a852a17b7702aa3616"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/sendai-tanabata-festival/japan-bullet-train-sendai-tanabata-festival-1200x300.png",
+    "bytes": 465081,
+    "sha256": "27541e3ce25a719eae9b5a8c1856191bc4fee0d85363768e69e59d1f0333e87f"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/sendai-tanabata-festival/japan-bullet-train-sendai-tanabata-festival-1200x628.png",
+    "bytes": 1554534,
+    "sha256": "b243264c814a966919b229a10b09ec769e9f08f248651def37ff33f02fd47c43"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/nagaoka-fireworks/japan-bullet-train-nagaoka-fireworks-1080x1920.png",
+    "bytes": 2265631,
+    "sha256": "5cf76a66cf19940df3b4bfd37d08869de61e4c21f36f999b8c4fffaa57550770"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/nagaoka-fireworks/japan-bullet-train-nagaoka-fireworks-1200x1200.png",
+    "bytes": 1797436,
+    "sha256": "aae5895a41f7b73a38695a1ac969a1cf1afcfa721264bb36ab1d11e9056fa870"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/nagaoka-fireworks/japan-bullet-train-nagaoka-fireworks-1200x300.png",
+    "bytes": 517733,
+    "sha256": "ad40627005b0a00032e280b83d4d1dc3b5b809f345bce631671feb9254accb3b"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/nagaoka-fireworks/japan-bullet-train-nagaoka-fireworks-1200x628.png",
+    "bytes": 1581237,
+    "sha256": "61f6744845f147c2fad39add7f27acc61f7dbd1fec66d6ec82acdb6087088bfa"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/omagari-fireworks/japan-bullet-train-omagari-fireworks-1080x1920.png",
+    "bytes": 1962110,
+    "sha256": "7dfe9b1e3d937f0c19b9c42f34f3e7120c0730dbf287f31412e6d6f05b66550e"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/omagari-fireworks/japan-bullet-train-omagari-fireworks-1200x1200.png",
+    "bytes": 1676476,
+    "sha256": "bbe2a1d8f7b863f0dbdd06763fc2eb12cd3769941134afc23a3c2c58243cfd4b"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/omagari-fireworks/japan-bullet-train-omagari-fireworks-1200x300.png",
+    "bytes": 505122,
+    "sha256": "cb53dd30b49bdf477b00474f51eb4d02bd49d004b50b5c0e5e30b3314ca47f29"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/seasonal/omagari-fireworks/japan-bullet-train-omagari-fireworks-1200x628.png",
+    "bytes": 1595166,
+    "sha256": "ffad047acfd5f3cc9a5b79a0d97963bcbc4868e1bd1054f5dcff0dea0c5c2854"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/logo/airport-taxi-logo-01.png",
+    "bytes": 14941,
+    "sha256": "b9a44d87f73049236cab372fd61b5315478a84b21648542b71704f165f9e5313"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/logo/airport-taxi-logo-02.png",
+    "bytes": 27981,
+    "sha256": "edc29aea93749a31e5bf6a71d06f51996d2e18fd8c28360efc426085547cea5b"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/logo/airport-taxi-logo-03.png",
+    "bytes": 28553,
+    "sha256": "1d5d203d4da060e21d3cbcac5693f53c2e2149ebdc3a194f1128e96f400c3e70"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/business-elite/airport-taxi-business-elite-1080x1920.png",
+    "bytes": 1459903,
+    "sha256": "3d982b050c8cdce8615e3d30e8fe2ee8e3eebf420a92bf7b3b331cb5a6b3a41a"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/business-elite/airport-taxi-business-elite-1200x1200.png",
+    "bytes": 1113810,
+    "sha256": "d81281a163cba9f5d1130ea486799dfd7920b85104f912c8ddf235df9457a7da"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/business-elite/airport-taxi-business-elite-1200x300.png",
+    "bytes": 278474,
+    "sha256": "f2fdf9a41a4d1ba76ca5717ebe5c3fae68f2658cecc2fa6b705b17cd67c030c3"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/business-elite/airport-taxi-business-elite-1200x628.png",
+    "bytes": 819684,
+    "sha256": "dba29ce3c230cccb420f46f5d54189d4d5da2024bbb2fe6400674f9d8577fdd8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/family-group/airport-taxi-family-group-1080x1920.png",
+    "bytes": 1528240,
+    "sha256": "19f0c4f039da07d430745eff8075e5a2b3ed402390ad0244c442695baec0fb38"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/family-group/airport-taxi-family-group-1200x1200.png",
+    "bytes": 1185786,
+    "sha256": "d051308d1db4652a32638a557f870146b10474de9973749089677d1e8b6cf1a9"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/family-group/airport-taxi-family-group-1200x300.png",
+    "bytes": 381192,
+    "sha256": "61382f996601225c1e1894b41d88240a02c7e2994c6a913c4661e7d3de18e5a2"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/family-group/airport-taxi-family-group-1200x628.png",
+    "bytes": 761333,
+    "sha256": "4be97a6e00455eaf59497862eb964c4c46a079743c91a229c8871ce2058f83b9"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/logo/japan-bus-tickets-logo.png",
+    "bytes": 48492,
+    "sha256": "826be90021a612b2c3187799a4fc9ed254db70b5869556a29ca5a83fa6af48b8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/banners/japan-bus-tickets-mt-fuji-1080x1920.png",
+    "bytes": 2519613,
+    "sha256": "5cab8f1f92edfa5a0b825c22ec380a7a7f34d2304f9c53a59db337462b26522c"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/banners/japan-bus-tickets-mt-fuji-1200x1200.png",
+    "bytes": 2023981,
+    "sha256": "5785afa31d69dc9041c3491f61a9c32bd5d7b4420ce186a063293421d86f95b4"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/banners/japan-bus-tickets-mt-fuji-1200x300.png",
+    "bytes": 425774,
+    "sha256": "d85fe994a55dfa35dc7554831d0624f6212d0d63449c15820b2f382ea421d6b9"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/banners/japan-bus-tickets-mt-fuji-1200x628.png",
+    "bytes": 1315238,
+    "sha256": "1fe433f5a3dadc08a94dfcf723ce1d88c9f33d29cddb089ac5c926e1211e3369"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/pocket-wifi/banners/japan-wireless-pocket-wifi-shibuya-1200x628.webp",
+    "bytes": 163654,
+    "sha256": "3c489eb8b3e082e24f7301da771337e516ea13b5745198b00916b65ea64d56a8"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/esim/banners/japan-wireless-esim-1200x628.webp",
+    "bytes": 122702,
+    "sha256": "785ba5b24d57848473df02290f9ebb450c7fc0cd6830b664503a846b3c234e10"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/shinkansen/banners/japan-bullet-train-1200x628.webp",
+    "bytes": 111822,
+    "sha256": "87cfe5bab38f09ab9b4340608b227bd5ad3c11efdc43bc83247b47def0da4f61"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/airport-taxi/banners/family-group/airport-taxi-family-group-1200x628.webp",
+    "bytes": 96150,
+    "sha256": "6a7601a16562a570580e3aa6125ef4b250bf58d47d1a8de9e08aec76c35381d2"
+  },
+  {
+    "path": "public/assets/affiliates/japan-wireless/bus-tickets/banners/japan-bus-tickets-mt-fuji-1200x628.webp",
+    "bytes": 165780,
+    "sha256": "7819acd6196c9e7cbdb6f266e68a7629e1aba885d37d2fadd65124302454d0ff"
+  }
+]

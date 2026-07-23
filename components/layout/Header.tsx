@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navigation = [
-  { label: "Internet", href: "/esim" },
-  { label: "Transport", href: "/compare" },
-  { label: "Airport", href: "/airport" },
-  { label: "Tickets", href: "/compare" },
-  { label: "Guides", href: "/sitemap" },
-  { label: "Reviews", href: "/reviews/japan-wireless" },
+  { label: "Home", href: "/" },
+  { label: "Compare", href: "/compare" },
+  { label: "eSIM", href: "/esim" },
+  { label: "Pocket WiFi", href: "/pocket-wifi" },
+  { label: "SIM Card", href: "/sim-card" },
+  { label: "Diagnosis", href: "/diagnosis" },
 ];
 
 export default function Header() {
@@ -63,9 +63,9 @@ export default function Header() {
           <button className="v2-language" type="button" aria-label="Language: English">
             <GlobeIcon /> EN <span aria-hidden="true">⌄</span>
           </button>
-          <a className="v2-header-cta" href="/#planner" onClick={() => setOpen(false)}>
+          <Link className="v2-header-cta" href="/#planner" onClick={() => setOpen(false)}>
             Build My Travel Kit
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

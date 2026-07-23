@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { providerReviews } from "@/data/providerReviews";
+import { connectivityProviders } from "@/data/connectivityProviders";
 
 export default function ProviderReviewLinks() {
   return (
@@ -18,7 +18,7 @@ export default function ProviderReviewLinks() {
         </header>
 
         <div className="provider-review-link-grid">
-          {providerReviews.map((provider, index) => (
+          {connectivityProviders.map((provider, index) => (
             <Link
               className="provider-review-link-card"
               href={`/reviews/${provider.slug}`}
@@ -28,7 +28,7 @@ export default function ProviderReviewLinks() {
                 <span>
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <small>{provider.category}</small>
+                <small>{provider.tagline}</small>
               </div>
 
               <h3>{provider.name}</h3>
